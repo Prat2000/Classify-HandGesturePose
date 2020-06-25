@@ -1,6 +1,7 @@
 from __future__ import print_function, unicode_literals
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf  #changed tensorflow to tensorflow.compat.v1
+tf.disable_v2_behavior()    #added
 import numpy as np
 import scipy.misc
 import matplotlib.pyplot as plt
